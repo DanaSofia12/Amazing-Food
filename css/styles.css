@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Protest+Riot&display=swap');
+
+*{
+    font-family: "DM Serif Display", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Estilos de la cabecera */
+
+header{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    position: relative;
+
+}
+
+header #principio{
+    font-size: 37px;
+    text-decoration: none;
+    color: #ed5988;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.2;
+}
+header nav{
+    width: 100%;
+    /* height: 400px; */
+    background: rgb(0, 0, 0);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+}
+header nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 15px;
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    transition: .5s;
+
+}
+
+nav li a:hover{
+    border-bottom: 2px solid #fff;
+}
+#hero{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top:70px ;
+    position: relative;
+    z-index: 2;
+}
+
+#logo img{
+    width: 170px;
+    height: 165px;
+    transition: .5s;
+}
+
+#logo img:hover{
+    transform: scale(1.1);
+}
+#hero h2{
+    font-size:60px ;
+    color: #f53d77;
+
+}
+#hero h1 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+    
+}
+
+
+
+main{
+    width: 100%;
+    position:relative;
+}
+
+/* SECCION SOBRE NOSOTROS */
+
+#nosotros{
+    width: 100%;
+    background: url("../img/fondo_nosotros.jpg");
+    text-align: center;
+    padding-top: 80px ;
+    padding-bottom: 80px;
+
+}
+
+.capa1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+}
+
+#nosotros p{
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+#nosotros h2{
+    color: #ed5988;
+    font-size: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 3;
+}
+#nosotros .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around ;
+    padding-top: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+#nosotros .a{
+    position: relative;
+    z-index: 3;
+}
+
+#nosotros img{
+    width: 90px;
+    height: 70px;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#nosotros img:hover{
+    transform: scale(2.2);
+}
+ /* ESTILOS MENÚ */
+
+#menu{
+    width: 100%;
+    background: url(../img/fondo4.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px ;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 2;
+ }
+
+
+ #menu .fila{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around ;
+    padding: 0;
+ }
+
+ #menu .fila .col-menu{
+    background: url(../img/textura.jpg);
+    width: 400px;
+    height: 300px;
+    border-color: #000;  
+    text-align: center;
+    margin: 10px;
+ }
+
+ #menu h2{
+    padding-top: 30px;
+    text-align: center;
+    color: #ed5988;
+ }
+ 
+#menu .fila .col-menu .pri{
+    font-size: 25px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+}
+
+#menu .fila .col-menu .precio{
+    padding-top: 270px ;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    float: none;
+    
+}
+
+ #menu img{
+    width: 400px;
+    height: 300px;
+    transition: .5s;
+    position: relative;
+    z-index: 3;
+ }
+
+ #menu img:hover{
+    transform: scale(0.5);
+ }
+
+ #menu button{
+    background:#ed5988;
+    margin: 5px;
+    font-size: 20px;
+    padding: 9px 40px;
+    border-radius: 9px;
+    color: #fff;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+ }
+
+ #menu button:hover{
+    transform: scale(1.1);
+    background: #fff;
+    color: rgb(227, 29, 29);
+ }
+
+
+ /* SECCION RESERVAS */
+
+ #reservas{
+    width: 100%;
+    position: relative;
+    background: url(../img/reserva.jpg);
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 5px;
+
+
+ }
+
+ #reservas .reserva_cont{
+    width: 80%;
+    margin: 10% auto;
+    border: 4px solid  #ed5988;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.734);
+ }
+
+ #reservas h2{
+    font-size: 50px;
+    color: #ed5988;
+ }
+ #reservas p{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+ #reservas form {
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+ }
+ #reservas .fila{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+ }
+ 
+ #reservas input,
+ #reservas select {
+    background: #fadae4;
+    width: 48%;
+    padding: 12px 20px;
+    margin: 20px;
+
+ }
+ #reservas button{
+    background:#ed5988;
+    margin: 25px;
+    font-size: 20px;
+    padding: 9px 40px;
+    border-radius: 9px;
+    color: #fff;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+ }
+
+ #reservas button:hover{
+    transform: scale(1.1);
+    background: #fadae4;
+    color: #000;
+ }
+
+ /* SECCION DOMICILIOS */
+
+ #domicilio{
+    width: 100%;
+    position: relative;
+    background: url(../img/textura.jpg);
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 5px;
+ }
+
+ #domicilio h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: #070707;
+ }
+
+ #domicilio .fila{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around ;
+    padding: 20px;
+    font-size: 20px;
+ }
+
+ #domicilio .fila .col-pedido{
+    width: 50%;
+    margin: 20px;
+    border-radius: 5px;
+    border: 4px solid  #000000;
+    background: #ed598888;
+    color: #fff;
+    padding: 10px;
+ }
+
+ #domicilio .fila button{
+    background:#f7c1d2;
+    margin: 5px;
+    font-size: 20px;
+    padding: 2px 4px;
+    border-radius: 9px;
+    color: #000000;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+ }
+
+ #domicilio .fila button:hover{
+    transform: scale(1.1);
+    background: #622236;
+    color: #ffffff;
+ }
+
+ /* SECCION UBICACIÓN */
+
+ #ubicacion{
+    width: 100%;
+    font-size: 20px;
+    position: relative;
+    background: url(../img/fundo.jpg);
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 5px;
+ }
+
+ #ubicacion h2{
+    padding: 40px;
+    font-size: 40px;
+ }
+
+ #ubicacion .fila{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around ;
+    padding: 0;
+ }
+
+ #ubicacion img{
+    width: 200px;
+    height: 160px;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#ubicacion img:hover{
+    transform: rotate(-360deg);
+}
+
+#contacto{
+    width: 100%;
+    font-size: 20px;
+    position: relative;
+    background: url(../img/opaco.jpg);
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+#contacto .una{
+    width: 40%;
+    margin: 30px auto;
+    border: 4px solid  #ed5988;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.734);
+}
+
+#contacto input {
+   width: 48%;
+   padding: 5px 10px;
+   margin: 5px 0;
+
+}
+
+#contacto button{
+    background:rgba(191, 196, 171, 0.713);
+    margin: 10px;
+    font-size: 15px;
+    padding: 7px 20px;
+    border-radius: 9px;
+    color: #fff;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+ }
+
+ #contacto button:hover{
+    transform: scale(1.1);
+ }
+
+
+
+ footer{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px;
+ }
+
+ footer  img{
+    width: 90px;
+    height: 85px;
+    transition: .5s;
+}
+
+footer img:hover{
+    transform: scale(1.1);
+}
+
+ /* TABLETS IPADS */
+
+ @media screen and (min-width: 768px) and (max-width: 990px) {
+ 
+ }
+
+/* PHONES */
+@media screen and (min-width: 320px) and (max-width: 680px) {
+
+
+    header nav{
+        display: block;
+        text-align: center;
+        width: 180%;
+    }
+
+    video{
+        width: 180%;
+    }
+
+    .capa{
+        width: 180%;
+    }
+
+    #hero{
+        width: 170%;
+    }
+
+    #nosotros{
+        width: 170%;
+    }
+
+    .capa1{
+        width: 170%;
+    }
+
+    #menu{
+        width: 170%;
+    }
+    #menu .fila .col-menu{
+        width: 200px;
+        height: 150px;
+    }
+
+    #menu .fila .col-menu .pri{
+        font-size: 18px;
+    }
+
+    #menu .fila .col-menu .precio{
+        font-size: 18px;
+        padding-top: 130px;
+    }
+    #menu img{
+        width: 200px;
+        height: 150px;
+    }
+
+    #reservas{
+        width: 170%;
+    }
+
+    #domicilio{
+        width: 170%;
+    }
+
+    #domicilio .fila{
+        width: 100%;
+    }
+    
+
+    #ubicacion{
+        width: 170%;
+    }
+
+    #contacto{
+        width: 170%;
+    }
+
+    footer{
+        width: 170%;
+    }
+    header nav ul{
+        margin-top: 30px;
+    }
+    nav li a{
+        font-size: 20px;
+    }
+
+    #hero h2{
+        font-size: 36px;
+    }
+    #hero h1{
+        font-size: 26px;
+    }
+    #hero button{
+        font-size: 18px;
+        padding: 8px 14px;
+    }
+
+
+    #contacto input{
+        width: 100%;
+        display: block;
+    }
+}
